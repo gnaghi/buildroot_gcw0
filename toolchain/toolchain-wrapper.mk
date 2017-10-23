@@ -26,6 +26,11 @@ ifeq ($(BR2_x86_x1000),y)
 TOOLCHAIN_WRAPPER_ARGS += -DBR_OMIT_LOCK_PREFIX
 endif
 
+# Avoid FPU bug on XBurst CPUs
+ifeq ($(BR2_mips_xburst),y)
+TOOLCHAIN_WRAPPER_ARGS += -DBR_NO_FUSED_MADD
+endif
+
 ifeq ($(BR2_CCACHE_USE_BASEDIR),y)
 TOOLCHAIN_WRAPPER_ARGS += -DBR_CCACHE_BASEDIR='"$(BASE_DIR)"'
 endif
@@ -39,5 +44,5 @@ endef
 
 define TOOLCHAIN_WRAPPER_INSTALL
 	$(INSTALL) -D -m 0755 $(@D)/toolchain-wrapper \
-		$(HOST_DIR)/usr/bin/toolchain-wrapper
+		$(HOST_DIR)/bin/toolchain-wrapper
 endef
