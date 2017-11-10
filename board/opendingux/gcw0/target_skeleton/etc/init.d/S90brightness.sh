@@ -3,6 +3,8 @@
 # Simple script to load/store screen brightness
 #
 
+exit 0
+
 STATEFILE=/usr/local/etc/brightness.state
 SYSFSFILE=/sys/class/backlight/pwm-backlight/brightness
 

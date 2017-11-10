@@ -1,5 +1,5 @@
 #!/bin/sh
-
+exit 0
 # Either start or stop all the services in
 # /usr/local/etc/init.d, executing them in numerical order.
 

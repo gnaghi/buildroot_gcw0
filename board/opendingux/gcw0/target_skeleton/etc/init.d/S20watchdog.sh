@@ -1,5 +1,7 @@
 #!/bin/sh
 
+exit 0
+
 case "$1" in
 
     start)

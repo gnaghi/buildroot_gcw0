@@ -1,5 +1,5 @@
 #!/bin/sh
-
+exit 0
 [ -z "$1" ] || [ "x$1" = "xstart" ] || exit 0
 
 RSA_KEY=/etc/dropbear/dropbear_rsa_host_key

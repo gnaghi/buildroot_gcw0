@@ -2,6 +2,7 @@
 #
 # Simple script to load/store ALSA parameters (volume...)
 #
+exit 0
 
 VOLUME_STATEFILE=/usr/local/etc/volume.state
 CONTROL=PCM
