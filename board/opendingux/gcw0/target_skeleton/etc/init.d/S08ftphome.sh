@@ -1,5 +1,7 @@
 #!/bin/sh
 
+exit 0
+
 if [ -z "$1" ] || [ "x$1" = "xstart" ]; then
 
 	mount --bind /usr/share/ftphome/media /usr/share/ftphome/media

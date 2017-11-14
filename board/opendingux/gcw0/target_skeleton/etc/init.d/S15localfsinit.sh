@@ -1,5 +1,7 @@
 #!/bin/sh
 
+exit 0
+
 if [ -z "$1" ] || [ "x$1" = "xstart" ]; then
 	mkdir -p /media/data/apps
 

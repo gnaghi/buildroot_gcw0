@@ -1,4 +1,7 @@
 #!/bin/sh
+
+exit 0
+
 /bin/mount -o remount,rw /media
 /bin/mkdir -p /media/system
 /bin/mount -o ro /dev/mmcblk0p1 /media/system
